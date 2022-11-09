@@ -8,15 +8,15 @@ const ingredients = [
 ];
 
 var list = document.getElementById("ingredients");
-var clone = list.cloneNode(true);
+var makeList = list.cloneNode(true);
 
 ingredients.forEach(ingredient => {
   var entry = document.createElement("li");
   entry.textContent = ingredient;
   entry.classList.add("item");
-  clone.appendChild(entry);
+  makeList.appendChild(entry);
 })
 
-list.parentNode.replaceChild(clone, list);
+list.parentNode.replaceChild(makeList, list);
 
 
