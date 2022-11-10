@@ -2,12 +2,12 @@ let counterValue = 0;
 
 const refs = {
     labelCounter: document.querySelector('#value'),
-    buttonDecrement: document.querySelector('[data-action="decrement"]'),
-    buttonIncrement: document.querySelector('[data-action="increment"]'),
+    btnDec: document.querySelector('[data-action="decrement"]'),
+    btnInc: document.querySelector('[data-action="increment"]'),
 };
 
-refs.buttonDecrement.addEventListener('click', onButtonDecrement);
-refs.buttonIncrement.addEventListener('click', onButtonIncrement);
+refs.btnDec.addEventListener('click', onButtonDecrement);
+refs.btnInc.addEventListener('click', onButtonIncrement);
 
 function onButtonDecrement(event) {
     counterValue -= 1;
