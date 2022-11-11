@@ -7,9 +7,8 @@ const onFormSubmit = (event) => {
             email = formElements.email,
             password = formElements.password;
 
-    email.value === "" || password.value === ""
-        ? alert("All fields have to be filled")
-        : null;
+    if (email.value === "" || password.value === "")
+        return alert("All fields have to be filled");
     
     const formData = {
         email: email.value,
